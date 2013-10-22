@@ -1,0 +1,28 @@
+<section id="post" class="content">
+  <article class="{{ include.class }}">
+    <header>
+      {{ page.date | date_to_string }}{% for tag in page.tags %}, #{{ tag }}{% endfor %}
+      <h2>{{ page.title | escape }}</h2>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      <nav class="article">
+        <ul class="sharing">
+          <li><a href="post.html"><i class="icon icon-tweet"></i></a></li>
+          <li><a href="post.html"><i class="icon icon-like"></i></a></li>
+          <li><a href="post.html"><i class="icon icon-plus"></i></a></li>
+        </ul>
+      </nav>
+    </footer>
+  </article>
+</section>
+<section id="comments" class="content">
+  <div id="disqus_thread"></div>
+  <script>
+    window.disqus_identifier = '{{ page.id }}';
+    window.disqus_title = '{{ page.title }}';
+    window.disqus_url = '{{ site.blog }}{{ page.url }}';
+  </script>
+</section>

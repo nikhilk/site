@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTCF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="imagetoolbar" content="false">
+  <title>{{ page.title | escaped }} - Nikhil's Blog</title>
+  <meta name="author" content="Nikhil Kothari">
+  <meta name="copyright" content="Nikhil Kothari">
+  <meta name="description" content="{{ page.summary | escaped }}">
+  <meta name="keywords" content="{{ page.keywords | escaped }}">
+  <meta property="og:title" content="{{ page.title | escaped }}">
+  <meta property="og:description" content="{{ page.summary | escaped }}">
+  <link rel="me" type="text/html" href="https://twitter.com/nikhilk" />
+  <link rel="stylesheet" type="text/css" href="/assets/site.css" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Nikhil's Blog Feed" href="http://feeds.feedburner.com/nikhilk" />
+  <link rel="canonical" href="">
+</head>
+<body>
+  <div id="headerContainer" class="contentContainer clearfix">
+    <header id="header" class="content">
+      <h1><a href="/">Nikhil Kothari</a></h1>
+      <div>Ideas, and thoughts... when 140 characters just aren't enough!</div>
+      <nav>
+        <ul>
+          <li><a href="#bio">About Me</a></li>
+          <li><a href="http://feeds.feedburner.com/nikhilk">Feed</a></li>
+          <li><a href="http://500px.com/nikhilkothari">Photos</a></li>
+          <li><a href="https://twitter.com/nikhilk">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="messageContainer" class="{{ page.messageType ?? 'null' }}">{{ page.message }}</div>
+  <div id="mainContainer">{{ content }}</div>
+
+  <div id="footerContainer" class="contentContainer clearfix">
+    <footer id="footer" class="content">
+      <section>
+        <aside id="bio">
+          <h5>A little bit about me...</h5>
+          <p>
+            <img src="/assets/nikhilk.jpg" alt="Photo" />
+            I am a software engineer by profession, and passion. I also enjoy photography, travel and music.
+          </p>
+          <p>
+            Previously, I was a Software Architect at Microsoft working on <a href="http://windowsazure.com">Azure</a>,
+            .NET and the <a href="http://www.microsoft.com/web/platform/">web stack</a> (ASP.NET and more), as well as
+            <a href="http://www.bing.com">Bing</a> mobile over the course of 16+ years. I am also the creator of
+            <a href="http://www.scriptsharp.com">Script#</a>, an OSS c# to javascript compiler.
+          </p>
+          <nav class="elsewhere">
+            <ul>
+              <li><a class="symbol" data-symbol="&#xe086;" data-symbolalt="&#xe486;" href="https://twitter.com/nikhilk">Twitter</a></li>
+              <li><a class="symbol" data-symbol="&#xe000;" data-symbolalt="&#xe400;" href="http://500px.com/nikhilkothari">500px</a></li>
+              <li><a class="symbol" data-symbol="&#xe037;" data-symbolalt="&#xe437;" href="https://github.com/nikhilk">Github</a></li>
+              <li><a class="symbol" data-symbol="&#xe052;" data-symbolalt="&#xe452;" href="http://www.linkedin.com/in/nikhilk">Linkedin</a></li>
+              <li><a class="symbol" data-symbol="&#xe024;" data-symbolalt="&#xe424;" href="http://www.google.com/recaptcha/mailhide/d?k=01Cch83eb7fmzjEoTYWjE4-Q==&c=ng92aF-80vDeMy2SKlivBfdaRFMKZebsQ-XRI-XuuoQ=">Email</a></li>
+            </ul>
+          </nav>
+          <!--
+          <p><a href="/about.html">More info in the about page...</a></p>
+          -->
+        </aside>
+        <aside>
+          <!-- Blog Footer -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:200px;height:200px"
+               data-ad-client="ca-pub-1517518273472547"
+               data-ad-slot="5895555063"></ins>
+        </aside>
+      </section>
+      <section id="copyright">
+        All opinions expressed here are personal, and do not represent my employer's views.
+        <br />
+        All content copyright &copy; 2013, SonuK. All rights reserved.
+      </section>
+    </footer>
+  </div>
+
+  <script src="/assets/site.js"></script>
+  {% if page.comments == true %}
+  <script async src="http://nikhilk.disqus.com/embed.js"></script>
+  {% endif %}
+  <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async src="http://www.google-analytics.com/ga.js"></script>
+</body>
+</html>

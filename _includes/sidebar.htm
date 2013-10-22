@@ -1,0 +1,48 @@
+<div id="sidebarContainer" class="contentContainer">
+  <section id="sidebar" class="content">
+    <aside>
+      <nav class="blog">
+        <ul>
+          <a href="/feed.xml"><i class="icon icon-spacing icon-rss"></i>Subscribe</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <aside>
+      <div>
+        <form id="searchForm" method="get" action="/search">
+          <input type="text" id="searchText" name="q" placeholder="site search" autocorrect="false" autocapitalize="false" />
+          <input type="hidden" name="sa" value="Search" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <input type="hidden" name="cof" value="FORID:10" />
+          <input type="hidden" name="cx" value="partner-pub-1517518273472547:2942088663" />
+          <button type="submit" id="searchButton">Search</button>
+        </form>
+      </div>
+    </aside>
+    <aside>
+      <h4>Recent Posts</h4>
+      <nav class="recent">
+        <ul>
+          {% for post in site.posts limit:10 %}
+          <li><a href="{{ post.url }}"><i class="icon icon-spacing icon-item"></i>{{ post.title | escape }}</a></li>
+          {% endfor %}
+          <li><a href="/archive"><i class="icon icon-spacing icon-archive"></i>All Posts</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <aside id="sidebarVerticalAd" class="ad">
+      <!-- Blog Sidebar Vertical -->
+      <ins class="adsbygoogle"
+        style="display:inline-block;width:120px;height:600px"
+        data-ad-client="ca-pub-1517518273472547"
+        data-ad-slot="4776918665"></ins>
+    </aside>
+    <aside id="sidebarHorizontalAd" class="ad">
+      <!-- Blog Sidebar Horizontal -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:320px;height:50px"
+           data-ad-client="ca-pub-1517518273472547"
+           data-ad-slot="6253651869"></ins>
+    </aside>
+  <section>
+</div>

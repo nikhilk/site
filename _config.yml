@@ -1,0 +1,3 @@
+permalink: /:title/
+excerpt_separator: "<!-- more -->"
+blog: http://www.nikhilk.net

@@ -1,0 +1,14 @@
+---
+layout: page
+title: Archive
+comments: false
+---
+<div id="postContainer" class="contentContainer mainContainer">
+  <section id="post" class="content">
+    {% for post in site.posts %}
+      {% include reference.htm %}
+    {% endfor %}
+  </section>
+</div>
+
+{% include sidebar.htm %}

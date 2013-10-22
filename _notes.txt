@@ -1,0 +1,12 @@
+TODO
+- Microformats for person contact, any others?
+- 404 link to internet archive
+
+References
+- Portable Jekyll on Windows
+  http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html
+- Jekyll docs
+  http://jekyllrb.com/docs/usage/
+- Liquid docs
+  http://docs.shopify.com/themes/liquid-basics/6-contains
+  https://support.freshdesk.com/support/solutions/folders/117110
