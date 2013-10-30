@@ -8,38 +8,52 @@
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  src: url('fonts/opensans.eot');
+  src: url('fonts/opensans.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans.woff') format('woff'),
+       url('fonts/opensans.ttf') format('truetype'),
+       url('fonts/opensans.svg#OpenSansRegular') format('svg');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+  src: url('fonts/opensansb.eot');
+  src: url('fonts/opensansb.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensansb.woff') format('woff'),
+       url('fonts/opensansb.ttf') format('truetype'),
+       url('fonts/opensansb.svg#OpenSansSemibold') format('svg');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+  src: url('fonts/opensansi.eot');
+  src: url('fonts/opensansi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensansi.woff') format('woff'),
+       url('fonts/opensansi.ttf') format('truetype'),
+       url('fonts/opensansi.svg#OpenSansItalic') format('svg');
 }
 @font-face {
   font-family: 'Awesome';
-  src: url('awesome.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  src: url('fonts/awesome.eot?v=4.0.1');
+  src: url('fonts/awesome.eot?#iefix&v=4.0.1') format('embedded-opentype'),
+       url('fonts/awesome.woff?v=4.0.1') format('woff'),
+       url('fonts/awesome.ttf?v=4.0.1') format('truetype'),
+       url('fonts/awesome.svg?v=4.0.1#fontawesomeregular') format('svg');
 }
 @font-face {
   font-family: 'MonoSocial';
-  src: url('monosocial.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  src: url('fonts/monosocial.eot');
+  src: url('fonts/monosocial.eot?#iefix') format('embedded-opentype'),
+       url('fonts/monosocial.woff') format('woff'),
+       url('fonts/monosocial.ttf') format('truetype'),
+       url('fonts/monosocial.svg#MonoSocialIconsFont') format('svg');
 }
 
 /**
@@ -238,7 +252,7 @@ iframe {
 #footer nav ul li {
   float: left;
   display: inline-block;
-  margin-right: 3em;
+  width: 115px;
 }
 #footer aside {
   margin-bottom: 1em;
@@ -512,6 +526,7 @@ article section code, article section blockquote {
  */
 i.icon {
   font-family: Awesome;
+  font-size: 1.05em;
 }
 i.icon-spacing {
   padding-right: .5em;
