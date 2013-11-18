@@ -254,6 +254,9 @@ iframe {
   display: inline-block;
   width: 115px;
 }
+#footer nav ul li a {
+  font-weight: normal;
+}
 #footer aside {
   margin-bottom: 1em;
 }
@@ -365,6 +368,21 @@ article section dd {
 }
 article section code, article section blockquote {
   font-size: .9em;
+}
+article figcaption {
+  font-size: .75em;
+}
+article figure.left {
+  text-align: left;
+  padding: 1em 0;
+}
+article figure.right {
+  text-align: right;
+  padding: 1em;
+}
+article figure.center {
+  text-align: center;
+  padding: 1em;
 }
 #comments {
   margin-top: 2.5em;
