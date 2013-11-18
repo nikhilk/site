@@ -369,7 +369,10 @@ article section dd {
 article section code, article section blockquote {
   font-size: .9em;
 }
-article figcaption {
+article figure img {
+  max-width: 300px;
+}
+article figure figcaption {
   font-size: .75em;
 }
 article figure.left {
@@ -475,6 +478,9 @@ article figure.center {
 
 /* Mobile Landscape */
 @media only screen and (min-width: 480px) {
+  article figure img {
+    max-width: 460px;
+  }
 }
 
 /* Tablet Portrait */
@@ -512,6 +518,9 @@ article figure.center {
     border-bottom: solid 1px #ccc;
     padding-bottom: 2em;
     margin-bottom: 2em;
+  }
+  article figure img {
+    max-width: 700px;
   }
   #sidebarHorizontalAd {
     display: none;
