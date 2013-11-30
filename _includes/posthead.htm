@@ -10,7 +10,9 @@
     <nav class="article">
       <ul class="links">
         <li><a href="{{ post.url }}"><i class="icon icon-spacing icon-go"></i>Complete Post</a></li>
+        {% if post.comments %}
         <li><a href="{{ post.url }}#comments"><i class="icon icon-spacing icon-comments"></i>Comments</a></li>
+        {% endif %}
       </ul>
     </nav>
   </footer>

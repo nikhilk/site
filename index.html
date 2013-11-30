@@ -6,7 +6,7 @@ comments: false
 <div id="postContainer" class="contentContainer mainContainer">
   <section id="post" class="content">
     {% for post in site.posts limit:1 %}
-      {% include excerpt.htm class="first" %}
+      {% include posthead.htm class="first" %}
     {% endfor %}
   </section>
 </div>
@@ -16,7 +16,7 @@ comments: false
 <div id="morePostsContainer" class="contentContainer mainContainer">
   <section id="morePosts" class="content">
     {% for post in site.posts offset:1 limit:5 %}
-      {% include excerpt.htm class="recent" %}
+      {% include posthead.htm class="recent" %}
     {% endfor %}
   </section>
 </div>
