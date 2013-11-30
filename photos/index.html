@@ -1,0 +1,24 @@
+---
+layout: page
+title: Photos
+comments: false
+message: If you're passionate about photography, be sure to check out the selection of photos I've shared out on [500px](http://500px.com/nikhilkothari) and connect with me over there!
+messageType: info
+---
+<div id="postContainer" class="contentContainer mainContainer">
+  <section id="post" class="content">
+    {% for post in site.categories['photos'] limit:1 %}
+      {% include posthead.htm class="first" %}
+    {% endfor %}
+  </section>
+</div>
+
+{% include sidebar.htm %}
+
+<div id="morePostsContainer" class="contentContainer mainContainer">
+  <section id="morePosts" class="content">
+    {% for post in site.categories['photography'] offset:1 limit:5 %}
+      {% include posthead.htm class="recent" %}
+    {% endfor %}
+  </section>
+</div>

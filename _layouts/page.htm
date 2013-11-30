@@ -16,6 +16,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" title="Nikhil's Blog Feed" href="http://feeds.feedburner.com/nikhilk" />
   <link rel="canonical" href="">
+  {% include modulescss.htm %}
 </head>
 <body class="{{ page.categories }}">
   <div id="headerContainer" class="contentContainer clearfix">
@@ -26,7 +27,7 @@
         <ul>
           <li><a href="#bio">About Me</a></li>
           <li><a href="/">Blog</a></li>
-          <li><a href="http://500px.com/nikhilkothari">Photos</a></li>
+          <li><a href="/photos">Photos</a></li>
           <li><a href="https://twitter.com/nikhilk">Twitter</a></li>
         </ul>
       </nav>
@@ -99,5 +100,6 @@
   {% endif %}
   <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script async src="http://www.google-analytics.com/ga.js"></script>
+  {% include modulesjs.htm %}
 </body>
 </html>
