@@ -1,0 +1,9 @@
+{% for m in page.modules %}
+  {% case m %}
+    {% when 'fancybox' %}
+    <link rel="stylesheet" href="/modules/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <style type="text/css">
+    div.fancybox-title { font-family: inherit; font-size: .85em; }
+    </style>
+  {% endcase %}
+{% endfor %}
