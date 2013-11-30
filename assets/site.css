@@ -286,6 +286,9 @@ iframe {
   line-height: 1.5em;
   font-size: .9em;
 }
+#messageContainer a, #messageContainer a:visited {
+  color: inherit;
+}
 
 /**
  * Main
@@ -317,6 +320,7 @@ article footer {
   color: #757575;
   font-size: .85em;
   margin-top: .85em;
+  clear: both;
 }
 article footer a, article footer a:visited {
   text-decoration: none;
@@ -371,6 +375,7 @@ article section code, article section blockquote {
 }
 article figure img {
   max-width: 300px;
+  display: block;
 }
 article figure figcaption {
   font-size: .75em;
@@ -386,6 +391,47 @@ article figure.right {
 article figure.center {
   text-align: center;
   padding: 1em;
+}
+article figure.leftfloat {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+article figure.rightfloat {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+article figure.photo {
+  border: solid 1px #ccc;
+  padding: 4px;
+  font-size: 0;
+  display: inline-block;
+}
+body.photos article figure.photo {
+  display: none;
+}
+article ul.photoset {
+  list-style-type: none;
+  margin-left: 0px;
+  margin-top: 2em;
+  clear: both;
+}
+article ul.photoset li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: solid 1px #ccc;
+  padding: 4px;
+}
+article ul.photoset li a {
+  text-decoration: none;
+  font-size: 0px;
+}
+article ul.photoset li img {
+  width: 150px;
+  height: 150px;
+  display: block;
 }
 #comments {
   margin-top: 2.5em;
@@ -648,6 +694,9 @@ div.fail {
   border: solid 1px #eed3d7;
   color: #b94a48;
   background-color: #f2dede;
+}
+div.callout a, div.callout a:visited {
+  color: inherit;
 }
 
 /**
