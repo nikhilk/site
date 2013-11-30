@@ -1,6 +1,8 @@
 ---
 layout: post
-comments: true
+categories:
+- blog
+comments: false
 title: Time for Change
 summary: Blog resurrected with a simpler design and implementation, along with career next steps announcement.
 keywords: blog announcement change career

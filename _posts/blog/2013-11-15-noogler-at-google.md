@@ -1,6 +1,8 @@
 ---
 layout: post
-comments: true
+categories:
+- blog
+comments: false
 title: Noogler at Google
 summary: I joined Google recently, working on cloud and developer infrastructure. Some noogler impressions...
 keywords: announcement change career google
@@ -23,6 +25,6 @@ I waited a bit to post this (ok, just couple of weeks) to share first impression
 - And of course, the awesome food and abundance of choice (esp. down in Mountain View). :)
 
 <figure markdown="1" class="left">
-  ![Noogler Hat](/content/posts/noogler.jpg)
+  ![Noogler Hat](/content/blog/noogler.jpg)
   <figcaption>My noogler hat. Plush toy courtesy of the theme my group has going to make the space more googley.</figcaption>
 </figure>
