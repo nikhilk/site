@@ -25,7 +25,7 @@
       <nav>
         <ul>
           <li><a href="#bio">About Me</a></li>
-          <li><a href="http://feeds.feedburner.com/nikhilk">Feed</a></li>
+          <li><a href="/">Blog</a></li>
           <li><a href="http://500px.com/nikhilkothari">Photos</a></li>
           <li><a href="https://twitter.com/nikhilk">Twitter</a></li>
         </ul>
@@ -33,7 +33,7 @@
     </header>
   </div>
 
-  <div id="messageContainer" class="{{ page.messageType ?? 'null' }}">{{ page.message }}</div>
+  <div id="messageContainer" class="{{ page.messageType ?? 'null' }}">{{ page.message | markdownify }}</div>
   <div id="mainContainer">{{ content }}</div>
 
   <div id="footerContainer" class="contentContainer clearfix">

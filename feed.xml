@@ -6,22 +6,22 @@ layout: none
   <channel>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <copyright>Copyright (c) 2013, Nikhil Kothari</copyright>
-    <link>{{ site.blog }}</link>
+    <link>{{ site.url }}</link>
     <title>Nikhil's Blog Feed</title>
     <description>Nikhil's Blog Feed</description>
-    <atom:link href="{{ site.blog }}/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
   {% for post in site.posts %}
   <item>
-    <guid isPermaLink="true">{{ site.blog }}{{ post.url }}</guid>
-    <link>{{ site.blog }}{{ post.url }}</link>
-    <comments>{{ site.blog }}{{ post.url }}#comments</comments>
+    <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    <link>{{ site.url }}{{ post.url }}</link>
+    <comments>{{ site.url }}{{ post.url }}#comments</comments>
     <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
     <title>{{ post.title | escaped }}</title>
     <description>
       &lt;div&gt;
         {{ post.excerpt | markdownify | escape }}
         &lt;hr /&gt;
-        &lt;a href="{{ site.blog }}{{ post.url }}"&gt;Read more or Comment...&lt;/a&gt;
+        &lt;a href="{{ site.url }}{{ post.url }}"&gt;Read more or Comment...&lt;/a&gt;
       &lt;/div&gt;
     </description>
   </item>
