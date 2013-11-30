@@ -4,7 +4,7 @@ categories:
 - photos
 comments: false
 title: Fall in the Northwest
-summary: Fall colors from the north-west taken during the Fall of 2013.
+summary: Fall colors photography from the northwest taken during the fall of 2013.
 keywords: photography fall colors northwest seattle leavenworth nature landscapes
 tags:
 - photography
