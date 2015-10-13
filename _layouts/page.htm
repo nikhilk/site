@@ -34,7 +34,7 @@
     </header>
   </div>
 
-  <div id="messageContainer" class="{{ page.messageType ?? 'null' }}">{{ page.message | markdownify }}</div>
+  <div id="messageContainer" class="{{ page.messageType ?? 'null' }}">{{ page.message | append:' ' | markdownify }}</div>
   <div id="mainContainer">{{ content }}</div>
 
   <div id="footerContainer" class="contentContainer clearfix">

@@ -4,7 +4,7 @@ categories:
 - blog
 comments: true
 title: Introducing Cloud Datalab and Cloud Dataproc
-summary: Cloud Datalab just went beta, joining Cloud Dataproc in beta - two new products from my team, bringing the big data open source ecosystem to Google Cloud Platform.
+summary: Cloud Datalab joins Cloud Dataproc in beta - two new products from my team, bringing the big data open source ecosystem to Google Cloud Platform.
 keywords: announcement google cloud tools services datalab dataproc bigdata hadoop spark ipython data
 tags:
 - google
