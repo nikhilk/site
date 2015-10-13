@@ -18,9 +18,9 @@ Two of the projects that are being worked on in my team are now public, and join
 
 ----
 
-## Cloud DataLab
+### Cloud DataLab
 
-<figure markdown="1" class="right">
+<figure markdown="1" class="rightfloat">
   ![Cloud Datalab](/content/blog/datalabHexagon.png)
 </figure>
 
@@ -36,9 +36,9 @@ Cloud Datalab is an [open source project](https://github.com/GoogleCloudPlatform
 <!-- more -->
 ----
 
-## Cloud Dataproc
+### Cloud Dataproc
 
-<figure markdown="1" class="right">
+<figure markdown="1" class="rightfloat">
   ![Cloud Dataproc](/content/blog/dataprocHexagon.png)
 </figure>
 
@@ -51,7 +51,7 @@ Cloud Dataproc brings Hadoop and Spark as a service -- a fully managed solution 
 
 ----
 
-## More Ahead
+### More Ahead
 
 If you're already on Google Cloud, you can start using Datalab and Dataproc in your project today. If you're not, just head over to signup for a [free trial](https://cloud.google.com/free-trial/) to get started.
 
