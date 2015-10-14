@@ -12,9 +12,9 @@ tags:
 - datalab
 - dataproc
 ---
-[Cloud Datalab](https://cloud.google.com/datalab) is finally in beta. It joins [Cloud Dataproc](https://cloud.google.com/dataproc) which reached its beta milestone a few weeks back. And a new blog post... after something of a long hiatus. :)
+Yesterday, we released [Cloud Datalab](https://cloud.google.com/datalab) into beta. And just a few weeks back, we released [Cloud Dataproc](https://cloud.google.com/dataproc) beta. And today new blog post... after something of a long hiatus. :)
 
-Two of the projects that are being worked on in my team are now public, and join the lineup of products on [Google Cloud Platform](https://cloud.google.com).
+Both of these releases join the family of big data products and services on [Google Cloud Platform](https://cloud.google.com), and build on popular tools - Jupyter (aka IPython) and Hadoop/Spark. We're want to enable people to use familiar tools with Google Cloud easily and simply.
 
 ----
 
@@ -31,7 +31,7 @@ Cloud Datalab builds on Jupyter, aka IPython, and interactive notebooks, for dat
   <figcaption>BigQuery SQL, Python Pandas, and Matplotlib - from data to insight</figcaption>
 </figure>
 
-Cloud Datalab is an [open source project](https://github.com/GoogleCloudPlatform/datalab). We're just getting started and are actively working on the project, so be sure to watch it for updates. Or fork it to work on a contribution.
+Cloud Datalab is on GitHub as an [open source project](https://github.com/GoogleCloudPlatform/datalab). We're just getting started and are actively working on the project, so be sure to watch it for updates. Or fork it to work on a contribution.
 
 <!-- more -->
 ----
