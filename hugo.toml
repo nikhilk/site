@@ -1,4 +1,4 @@
-baseURL = 'https://nikhilk.net/'
+baseURL = 'https://www.nikhilk.net/'
 languageCode = 'en-us'
 title = 'Nikhil Kothari'
 theme = ["github.com/imfing/hextra"]
