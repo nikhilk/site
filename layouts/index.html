@@ -1,0 +1,16 @@
+{{/* layouts/index.html */}}
+
+{{ define "main" }}
+  <article class="prose dark:prose-invert max-w-prose mx-auto px-6 py-8">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+
+  <section class="max-w-prose mx-auto px-6 mt-12">
+    <h2 class="text-2xl font-semibold mb-6 border-b pb-2 dark:border-gray-700">Recent Posts</h2>
+    {{ partial "list-posts.html" . }}
+  </section>
+{{ end }}
+
+{{ define "head" }}{{ end }}
+{{ define "sidebar" }}{{ end }}

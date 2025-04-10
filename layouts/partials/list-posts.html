@@ -1,0 +1,36 @@
+{{/* layouts/partials/list-posts.html */}}
+
+{{/* Fetch the 5 most recent pages from the 'posts' section */}}
+{{ $pages := first 5 (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+
+<ul class="list-none p-0">
+  {{ range $pages }}
+  <li class="mb-8 pb-8 border-b border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0 last:mb-0"> {{/* Increased spacing */}}
+    <article>
+      <h3 class="text-xl lg:text-2xl font-semibold mb-1"> {{/* Responsive heading size */}}
+        <a href="{{ .Permalink }}" class="text-primary-700 dark:text-primary-400 hover:underline">
+          {{ .Title }}
+        </a>
+      </h3>
+      <div class="text-sm text-gray-600 dark:text-gray-400 mb-3"> {{/* Slightly more margin below meta */}}
+         Published on {{ .Date.Format "January 2, 2006" }}
+         {{ with .Params.tags }}
+           <span class="mx-1">&middot;</span> Tags:
+           {{ range $index, $tag := . }}
+             {{ if $index }}, {{ end }}<a href="{{ relLangURL (printf "tags/%s" (urlize $tag)) }}" class="hover:underline">{{ $tag }}</a>
+           {{ end }}
+         {{ end }}
+      </div>
+      {{/* Apply prose styles directly to the summary div */}}
+      <div class="prose dark:prose-invert max-w-none mb-3">
+        {{ .Summary }}
+      </div>
+       {{ if .Truncated }}
+       <a href="{{ .Permalink }}" class="text-primary-700 dark:text-primary-400 hover:underline text-sm font-medium mt-2 inline-block">Read More →</a> {{/* Added font-medium */}}
+       {{ end }}
+    </article>
+  </li>
+  {{ else }}
+  <p class="text-gray-600 dark:text-gray-400">No posts found yet. Check back soon!</p>
+  {{ end }} {{/* End range $pages */}}
+</ul>

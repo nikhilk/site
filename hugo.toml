@@ -29,6 +29,8 @@ theme = ["github.com/imfing/hextra"]
 
 # Hextra specific parameters
 [params]
+  enableGitInfo = true
+
   # Enable or disable dark mode
   # Supported values: auto, light, dark (default: auto)
   appearance.mode = "auto"
@@ -51,7 +53,3 @@ theme = ["github.com/imfing/hextra"]
       unsafe = true # Needed for certain Hextra features like embedding HTML
   [markup.highlight]
     noClasses = false # Use CSS classes for syntax highlighting
-
-# Enable Hugo's build-in GitInfo features
-[enableGitInfo]
-  true
