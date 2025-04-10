@@ -1,0 +1,57 @@
+baseURL = 'https://nikhilk.net/'
+languageCode = 'en-us'
+title = 'Nikhil Kothari'
+theme = ["github.com/imfing/hextra"]
+
+# Menus
+[menu]
+  [[menu.main]]
+    # Unique identifier for the menu item
+    identifier = "home"
+    # Display name
+    name = "Home"
+    # URL relative to the baseURL
+    url = "/"
+    # Weight determines the order
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+# Hextra specific parameters
+[params]
+  # Enable or disable dark mode
+  # Supported values: auto, light, dark (default: auto)
+  appearance.mode = "auto"
+
+  # Icon used for the site (Font Awesome class)
+  navbar.displayTitle = true
+  navbar.displayLogo = false # Set to true if you add a logo
+
+  # Footer configuration
+  footer.displayCopyright = true
+  footer.displayPoweredBy = true
+
+  # Hextra defaults are quite minimal already,
+  # you can explore its documentation for more tweaks:
+  # https://imfing.github.io/hextra/docs/
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Needed for certain Hextra features like embedding HTML
+  [markup.highlight]
+    noClasses = false # Use CSS classes for syntax highlighting
+
+# Enable Hugo's build-in GitInfo features
+[enableGitInfo]
+  true
